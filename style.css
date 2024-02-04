@@ -1,0 +1,143 @@
+body{
+    /* background-color: #9681EB; */
+    background: linear-gradient(-100deg, #9681EB, #B484E6, #E485DD, #EB8B9A);
+
+}
+
+
+.Heading{
+    color: #EEEEEE;
+    position: absolute;
+    top:0%;
+     left: 50%;
+     transform: translate(-50%, 0);
+     /* translate(x,y)
+        minus sign position the div to the left with 50% width of the heading
+     */
+     margin-bottom: 20px;
+     font-family: 'Noto Sans', sans-serif;
+
+}
+
+#box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    
+     transform: translate(-50%, 0);
+     /* centering the box */
+
+     background-color: #45CFDD;
+     padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+
+
+    /* For centering horizontally */
+    /* For centering in the body change top to 50%*/
+}
+.container1{
+    margin-bottom: 2rem;
+}
+
+/* Designing the input */
+.container1 input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333
+}
+input::placeholder{
+    color: #999;
+}
+.container1 input:hover {
+    background-color: #EEEEEE;
+
+}
+
+.container1 button{
+    padding: 10px 20px;
+    background-color: #9681EB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.container1 button:hover {
+    background-color: #6527BE;
+}
+ 
+/* .container2{
+    display: flex;
+    flex-direction: column;
+}  */
+
+.container2 button{
+    height: 30px;
+    width: 30px;
+    padding: 7px 5px;
+   cursor: pointer;
+    background-color: #EA1179;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position:absolute;
+    top:40px;
+    right: 20px;
+
+
+
+}
+.container2 button:hover{
+   background-color:  #C51605 ;
+
+}
+
+
+.small-box{
+
+  background-color: #A7EDE7;
+    padding: 10px;
+    height: auto;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #333;
+    /* Only for the smooth animation */
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.small-box h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.small-box p{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.small-box:hover {
+    transform: translate(0, -3px);
+    /* 3px upward */
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width:768px){
+   
+   .container1 input{
+    margin-top: 5px;
+   }
+   .container1 button{
+    margin-top: 5px ;
+   }
+}
